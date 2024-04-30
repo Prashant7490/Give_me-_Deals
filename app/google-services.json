@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "129194002770",
+    "project_id": "give-me-deals-26408",
+    "storage_bucket": "give-me-deals-26408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129194002770:android:718d97a048b87070e0d28b",
+        "android_client_info": {
+          "package_name": "com.example.give_me_deals"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByS7EXHvwTslEgq_oVZAFU2cpCohlbrwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

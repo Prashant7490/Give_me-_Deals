@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardElevation="40dp"
+    app:cardCornerRadius="7dp"
+    android:layout_marginBottom="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/imview"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/appleiphone"
+            tools:ignore="MissingConstraints">
+
+        </ImageView>
+
+        <View
+            android:id="@+id/vew"
+            android:layout_width="1dp"
+            android:layout_height="130dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imview"
+            android:background="@color/black"
+            android:layout_marginHorizontal="5dp"/>
+        <RelativeLayout
+            app:layout_constraintStart_toEndOf="@+id/vew"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="300dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_round"
+                android:text="@string/_25_off"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="300dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/iphone"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tvDiscount"
+                android:textSize="20sp"
+                android:textStyle="bold|normal" />
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$999"
+                android:layout_marginEnd="300dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tvTitle"
+                android:textSize="20sp"
+                android:textStyle="bold|normal" />
+            <TextView
+                android:id="@+id/tvBusinessName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E2Business"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="300dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/tvPrice"
+                android:textSize="18sp"
+                android:textStyle="bold|normal" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityLastestDealFilters">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="764dp"
+        android:background="@color/Red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edit_round"
+            android:hint="@string/search_product"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivBackArrow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:padding="5dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white">
+        </ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/LinearFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/cHeader">
+        <TextView
+            android:id="@+id/TVFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/filter"
+            android:layout_marginEnd="310dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="20dp">
+        </TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLCategoires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearFilter">
+
+        <TextView
+            android:id="@+id/TVCatgories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:text="@string/categories"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/TVOSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0selected"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_round"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLPriceSliders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="25dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/RVLOCATION"
+        app:layout_constraintTop_toBottomOf="@+id/RLCategoires">
+
+        <TextView
+            android:id="@+id/TVPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/price"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/PriceSlider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@+id/TVPrice"
+            android:valueFrom="1"
+            android:valueTo="500"
+            app:thumbColor="@color/Red"
+            app:tickColorInactive="@color/Red"
+            app:trackColor="@color/Red" />
+
+        <TextView
+            android:id="@+id/TVPriceRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:padding="5dp"
+            android:text="@string/_500"
+            android:textColor="@color/lightGray"
+            android:textSize="12sp"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RVLOCATION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/RLPriceSliders"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/TVLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black">
+        </TextView>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/LocationSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVLocation"
+            android:layout_marginEnd="40dp"
+            app:trackColor="@color/Red"
+            app:thumbColor="@color/Red"
+            app:tickColorInactive="@color/Red"
+            android:valueFrom="1"
+            android:valueTo="200" />
+
+        <TextView
+            android:id="@+id/TVLocationRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="33dp"
+            android:padding="5dp"
+            android:text="@string/_200_km"
+            android:textColor="@color/lightGray"
+            android:textSize="12sp"
+            android:textStyle="italic|bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/CB1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="210dp"
+        android:buttonTint="@color/Red"
+        android:checked="false"
+        android:padding="10dp"
+        android:text="@string/in_store_redemption"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RVLOCATION">
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/CB2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/postage"
+        android:textSize="16sp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/CB1"
+        app:layout_constraintTop_toBottomOf="@id/RVLOCATION">
+
+    </CheckBox>
+
+    <RelativeLayout
+        android:id="@+id/RLShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/CB2">
+        <TextView
+            android:id="@+id/TVShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_only"
+            android:textSize="20sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="20dp">
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/CB3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="210dp"
+            android:buttonTint="@color/Red"
+            android:checked="false"
+            android:padding="10dp"
+            android:text="@string/deals_flash_sales"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVShow">
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/australian_mode"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp">
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/TVSortBY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/CB3"
+            android:text="@string/sort_by"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true">
+
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/price_high_to_low_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:text="@string/price_high_to_low"
+            android:layout_below="@+id/TVSortBY"/>
+
+        <CheckBox
+            android:id="@+id/price_low_to_high_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:text="@string/price_low_to_high"
+            android:layout_below="@+id/price_high_to_low_checkbox"/>
+
+        <CheckBox
+            android:id="@+id/newest_to_oldest_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:text="@string/newest_to_oldest"
+            android:layout_below="@+id/price_low_to_high_checkbox"/>
+
+        <CheckBox
+            android:id="@+id/oldest_to_newest_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:text="@string/oldest_to_newest"
+            android:layout_below="@+id/TVSortBY"
+            android:layout_toEndOf="@+id/price_high_to_low_checkbox"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/BTNCLEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/white"
+        android:paddingHorizontal="90dp"
+        android:text="@string/clear"
+        android:textColor="@color/Red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RLShow" />
+
+    <Button
+        android:id="@+id/BTNAPPLY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/Red"
+        android:paddingHorizontal="90dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/apply"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toLeftOf="@+id/BTNCLEAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RLShow" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

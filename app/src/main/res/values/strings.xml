@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Give_me _Deals</string>
+    <string name="shopping_local_made_easy">Shopping Local made Easy!</string>
+    <string name="shop_from_business_around_you">Shop From Business Around You</string>
+    <string name="next">Next</string>
+    <string name="title_activity_screen3">activity_screen3</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+    <!--    <string name="Save_it_For_Later" />-->
+    <string name="verify_mobile_number">Verify Mobile Number</string>
+    <string name="a_verification_code_has_been_sent_to_your_mobile_number_please_enter_the_code_below">A Verification code has been sent to your Mobile number Please enter the code below</string>
+    <string name="enter_otp_one_time_password">Enter otp(One Time Password)</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="welcome_back_login_to_shop_from_local_business_in_your_area">Welcome back ! Login to shop from local business in your area</string>
+    <string name="email_or_mobile_number">Email or Mobile Number</string>
+    <string name="enter_password1">Enter Password1</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="shop_for_great_deals_from_local_business_in_your_area">shop for great deals from local business in your area</string>
+    <string name="signup">Signup</string>
+    <string name="already_have_an_acccount_login">Already Have an Acccount?Login</string>
+    <string name="email_or_mobile_no">email or Mobile No</string>
+    <string name="send_recovery_mail">Send Recovery Mail</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_the_email_or_mobile_number_associated_with_your_account_and_will_send_a_link_to_reset_your_password">Enter the email or mobile number associated with your account and will send a link to reset your password</string>
+    <string name="email_or_mobile">Email or Mobile</string>
+    <string name="change_password">Change Password</string>
+    <string name="you_new_password_must_be_different_from_your_previous_password">You new password must be different from your previous password</string>
+    <string name="enter_current_password">Enter Current Password</string>
+    <string name="login">Login</string>
+    <string name="search_product">Search Product</string>
+    <string name="popular_category">Popular Category</string>
+    <string name="skip">skip</string>
+    <string name="otp">Otp</string>
+    <string name="verify">Verify</string>
+    <string name="haven_t_received_your_code_resend_otp">Haven\'t received your code? <font color ='#FF0000'>Resend OTP</font></string>
+
+    <string name="sporting">Sporting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular_categeory">Popular Categeory</string>
+    <string name="home">Home</string>
+    <string name="nearby">Nearby</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_homefrag">homefrag</string>
+
+    <string name="title_activity_home">home</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="feature">Feature</string>
+    <string name="_5_off">5%off</string>
+    <string name="jeans">Jeans</string>
+    <string name="_100">100</string>
+    <string name="e2business">E2Business</string>
+    <string name="view_all">View All</string>
+    <string name="latest_deal">Latest Deal</string>
+    <string name="mobile">Mobile</string>
+    <string name="_999">$999</string>
+    <string name="popular_business">Popular Business</string>
+    <string name="popularbusiness">PopularBusiness</string>
+    <string name="kings_beach">KINGS BEACH</string>
+    <string name="abc_cloth">ABC Cloth</string>
+    <string name="_25_off">25%off</string>
+    <string name="iphone">Iphone</string>
+    <string name="deals_near_me">Deals Near Me</string>
+    <string name="title_activity_feature_deals">FeatureDeals</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="feature_deals">Feature Deals</string>
+    <string name="filter">Filter</string>
+    <string name="feature_deals_near_you">Feature Deals Near You</string>
+    <string name="all_near_you">All Near You</string>
+    <string name="more_business">More Business</string>
+    <string name="popular_business_near_you">Popular Business Near You</string>
+    <string name="my_account">My Account</string>
+    <string name="unlock_all_feature">Unlock All Feature</string>
+    <string name="login_to_unlock_all_the_features_of_this_app_for_a_better_shopping_experience">Login to Unlock all the Features of this app For a better Shopping Experience</string>
+    <string name="show_password">Show Password</string>
+    <string name="title_activity_filters">FiltersActivity</string>
+    <string name="categories">Categories</string>
+    <string name="_0selected">0Selected</string>
+    <string name="price">Price</string>
+    <string name="_500">$1</string>
+    <string name="location">Location</string>
+    <string name="in_store_redemption">In-Store Redemption</string>
+    <string name="postage">Postage</string>
+    <string name="deals_flash_sales"><![CDATA[Deals & Flash Sales]]></string>
+    <string name="australian_mode">Australian Mode</string>
+    <string name="show_only">Show Only</string>
+    <string name="_200_km">200+KM</string>
+    <string name="sort_by">Sort by</string>
+    <string name="oldest_to_newest">Oldest to Newest</string>
+    <string name="price_high_to_low">Price High to Low</string>
+    <string name="price_low_to_high">Price Low to High</string>
+    <string name="newest_to_oldest">Newest to Oldest</string>
+    <string name="clear">Clear</string>
+    <string name="apply">Apply</string>
+    <string name="deal_information">Deal Information</string>
+
+
+</resources>

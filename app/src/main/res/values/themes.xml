@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Give_me_Deals" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/Red> -->
+    </style>
+
+    <style name="Theme.Give_me_Deals" parent="Base.Theme.Give_me_Deals" />
+</resources>
